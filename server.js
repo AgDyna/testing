@@ -7,6 +7,7 @@ const app = express()
 // mySql DB
 const connection = mysql.createConnection({
   host: process.env.Host || 'localhost',
+  port: process.env.MySql_Port || '3306',
   user: process.env.User || 'root',
   password: process.env.Password || '',
   database: process.env.Database || 'farmsured_php_testing',
